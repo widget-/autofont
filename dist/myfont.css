@@ -1,0 +1,107 @@
+@font-face {
+	font-family: "myfont";
+	src: url('../dist/myfont.eot');
+	src: url('../dist/myfont.eot?#iefix') format('eot'),
+		url('../dist/myfont.woff') format('woff'),
+		url('../dist/myfont.ttf') format('truetype'),
+		url('../dist/myfont.svg#myfont') format('svg');
+}
+
+.icon-base-pseudo {
+	font-family: "myfont";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+.icon-char(@filename) {
+	@uEA01-assistant-photo: "\E001";
+	@uEA02-audiotrack: "\E002";
+	@uEA03-blur-circular: "\E003";
+	@uEA04-blur-linear: "\E004";
+	@uEA05-blur-off: "\E005";
+	@uEA06-blur-on: "\E006";
+	@uEA07-brightness-1: "\E007";
+	@uEA08-brightness-2: "\E008";
+	@uEA09-brightness-3: "\E009";
+	@uEA0A-brightness-4: "\E00A";
+	@uEA0B-brightness-5: "\E00B";
+	@uEA0C-brightness-6: "\E00C";
+	@uEA0D-brightness-7: "\E00D";
+	@uEA0E-broken-image: "\E00E";
+	@uEA0F-brush: "\E00F";
+	@uEA10-camera-alt: "\E010";
+	@uEA11-camera-front: "\E011";
+	@uEA12-camera: "\E012";
+	
+	content: @@filename;
+}
+
+.icon(@filename, @insert: before) {
+	@pseudo-selector: ~":@{insert}";
+
+	&@{pseudo-selector} {
+		&:extend(.icon-base-pseudo);
+		.icon-char(@filename);
+	}
+}
+
+.icon-uEA01-assistant-photo {
+	.icon(uEA01-assistant-photo);
+}
+.icon-uEA02-audiotrack {
+	.icon(uEA02-audiotrack);
+}
+.icon-uEA03-blur-circular {
+	.icon(uEA03-blur-circular);
+}
+.icon-uEA04-blur-linear {
+	.icon(uEA04-blur-linear);
+}
+.icon-uEA05-blur-off {
+	.icon(uEA05-blur-off);
+}
+.icon-uEA06-blur-on {
+	.icon(uEA06-blur-on);
+}
+.icon-uEA07-brightness-1 {
+	.icon(uEA07-brightness-1);
+}
+.icon-uEA08-brightness-2 {
+	.icon(uEA08-brightness-2);
+}
+.icon-uEA09-brightness-3 {
+	.icon(uEA09-brightness-3);
+}
+.icon-uEA0A-brightness-4 {
+	.icon(uEA0A-brightness-4);
+}
+.icon-uEA0B-brightness-5 {
+	.icon(uEA0B-brightness-5);
+}
+.icon-uEA0C-brightness-6 {
+	.icon(uEA0C-brightness-6);
+}
+.icon-uEA0D-brightness-7 {
+	.icon(uEA0D-brightness-7);
+}
+.icon-uEA0E-broken-image {
+	.icon(uEA0E-broken-image);
+}
+.icon-uEA0F-brush {
+	.icon(uEA0F-brush);
+}
+.icon-uEA10-camera-alt {
+	.icon(uEA10-camera-alt);
+}
+.icon-uEA11-camera-front {
+	.icon(uEA11-camera-front);
+}
+.icon-uEA12-camera {
+	.icon(uEA12-camera);
+}

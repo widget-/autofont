@@ -1,0 +1,93 @@
+@font-face {
+	font-family: "myfont";
+	src: url('../myfont.eot');
+	src: url('../myfont.eot?#iefix') format('eot'),
+		url('../myfont.woff') format('woff'),
+		url('../myfont.ttf') format('truetype'),
+		url('../myfont.svg#myfont') format('svg');
+}
+
+.mf:before {
+	font-family: "myfont";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.mf-uEA01-assistant-photo:before {
+	content: "\E001";
+}
+
+.mf-uEA02-audiotrack:before {
+	content: "\E002";
+}
+
+.mf-uEA03-blur-circular:before {
+	content: "\E003";
+}
+
+.mf-uEA04-blur-linear:before {
+	content: "\E004";
+}
+
+.mf-uEA05-blur-off:before {
+	content: "\E005";
+}
+
+.mf-uEA06-blur-on:before {
+	content: "\E006";
+}
+
+.mf-uEA07-brightness-1:before {
+	content: "\E007";
+}
+
+.mf-uEA08-brightness-2:before {
+	content: "\E008";
+}
+
+.mf-uEA09-brightness-3:before {
+	content: "\E009";
+}
+
+.mf-uEA0A-brightness-4:before {
+	content: "\E00A";
+}
+
+.mf-uEA0B-brightness-5:before {
+	content: "\E00B";
+}
+
+.mf-uEA0C-brightness-6:before {
+	content: "\E00C";
+}
+
+.mf-uEA0D-brightness-7:before {
+	content: "\E00D";
+}
+
+.mf-uEA0E-broken-image:before {
+	content: "\E00E";
+}
+
+.mf-uEA0F-brush:before {
+	content: "\E00F";
+}
+
+.mf-uEA10-camera-alt:before {
+	content: "\E010";
+}
+
+.mf-uEA11-camera-front:before {
+	content: "\E011";
+}
+
+.mf-uEA12-camera:before {
+	content: "\E012";
+}

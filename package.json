@@ -1,0 +1,35 @@
+{
+  "name": "autofont",
+  "version": "1.0.0",
+  "description": "automatically generate fonts",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-consolidate": "^0.2.0",
+    "gulp-iconfont": "^6.0.0",
+    "gulp-iconfont-css": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sketch": "^1.0.3",
+    "lodash": "^4.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/widget-/autofont.git"
+  },
+  "keywords": [
+    "font",
+    "woff",
+    "ttf",
+    "svg"
+  ],
+  "author": "Widget",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/widget-/autofont/issues"
+  },
+  "homepage": "https://github.com/widget-/autofont#readme"
+}
